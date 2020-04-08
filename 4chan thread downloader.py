@@ -7,6 +7,8 @@ def getImagesFromThread(thread):
     if "4plebs" in thread:
         for i in d.split('<a href="https://i.4pcdn.org')[1:]:
             images.append('https://i.4pcdn.org%s' % i.split('"')[0])
+        for i in d.split('<a href="http://i.4pcdn.org')[1:]:
+            images.append('https://i.4pcdn.org%s' % i.split('"')[0])
         
         
     else:
